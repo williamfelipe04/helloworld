@@ -60,6 +60,9 @@ a:hover {
     /* min-width: 280px; */
     /* Centraliza blocos */
     margin: auto;
+    /* stick footer rodape no final da pagina*/
+    display: flex;
+    flex-direction: column;
 }
 
 /* Cabeçalho (header) */
