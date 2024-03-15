@@ -172,7 +172,13 @@ $page['title'] = $art['art_title'];
 require('_header.php');
 ?>
 
-<article><?php echo $article ?></article>
+<article>
+    <?php echo $article ?>
+    <?php
+    // Inclui o processamento dos comentários
+    require('widgets/_comments.php');
+    ?>
+</article>
 
 <aside>
     <?php
