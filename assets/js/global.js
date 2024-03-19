@@ -2,16 +2,15 @@
  * Chaves de configuração do Firebase
  * Copie aqui as suas prórias chaves do Firebase.
  **/
-const firebaseConfig = {
-    apiKey: "AIzaSyB_Dk7S89N7wQk_o3cntUH5-7v2IWd_P8Q",
-    authDomain: "hellowordblog.firebaseapp.com",
-    databaseURL: "https://hellowordblog-default-rtdb.firebaseio.com",
-    projectId: "hellowordblog",
-    storageBucket: "hellowordblog.appspot.com",
-    messagingSenderId: "238708085735",
-    appId: "1:238708085735:web:8c7fdcd4b63159275fe342"
-};
-
+const firebaseConfig = { 
+    apiKey : "AIzaSyCvkA29tKoNplplrFZ0c6_uw3gFXpdjhAE" , 
+    authDomain : "blog-hello-word-principal.firebaseapp.com" , 
+    projectId : "blog-hello-word-principal" , 
+    storageBucket : "blog-hello-word-principal.appspot.com" , 
+    mensagensSenderId : "350702842516" , 
+    appId : "1:350702842516:web:e8b8ce52df782816d0ba81" 
+  };
+  
 // Inicializa o Firebase
 firebase.initializeApp(firebaseConfig);
 
