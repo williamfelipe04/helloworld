@@ -84,6 +84,7 @@ require('_header.php');
 
 <aside>
     <?php require('widgets/_mostviewed.php') ?>
+    <?php require('widgets/_mostcoments.php')?>
 </aside>
 
 <?php require('_footer.php') ?>
