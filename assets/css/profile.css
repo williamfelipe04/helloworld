@@ -3,24 +3,26 @@
     display: none;
 }
 
-#userCard {
+.user-box {
+    display: table;
+    margin: auto;
     background-color: #ddd;
     border-radius: .35rem;
 }
 
-#userCard img {
+.user-box img {
     display: block;
     margin: auto;
     width: 100%;
     max-width: 300px;
-    border-radius: .3rem;
+    border-radius: .3rem .3rem 0 0;
 }
 
-#userCard h4 {
+.user-box h4 {
     margin: .5rem 1rem 1rem 1rem;
 }
 
-#userCard ul {
+.user-box ul {
     padding: 0 1rem 1rem 2rem;
     margin: 0;
     font-size: small;
@@ -39,4 +41,21 @@ article button {
 
 #btnLogout {
     background-color: orangered;
+}
+
+
+.box {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: .35rem;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #eee;
+}
+
+.box h5 {
+    margin: 0 0 .5rem 0;
 }
