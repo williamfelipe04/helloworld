@@ -21,8 +21,8 @@ $page = array(
 $sql = <<<SQL
 
 SELECT
--- Obter os campos id, thumbnail, title, summary
-	art_id, art_date, art_thumbnail, art_title, art_summary
+-- Obter o id
+	art_id
 FROM article
 
 -- Obter somente artigos no passado e presente
@@ -58,17 +58,7 @@ else :
     // Loop para obter cada artigo
     while ($art = $res->fetch_assoc()) :
 
-        $articles .= <<<HTML
-
-<div class="article" onclick="location.href = 'view.php?id={$art['art_id']}'">
-    <img src="{$art['art_thumbnail']}" alt="{$art['art_title']}">
-    <div>
-        <h4>{$art['art_title']}</h4>
-        <p>{$art['art_summary']}</p>
-    </div>
-</div>
-
-HTML;
+        $articles .= view_article($art['art_id']);
 
     endwhile;
 
