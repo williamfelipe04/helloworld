@@ -166,6 +166,7 @@ SQL;
     $res = $conn->query($sql);
     $art = $res->fetch_assoc();
 
+    // Retorna para o chamador
     return <<<HTML
 
         <div class="article" onclick="location.href = 'view.php?id={$art['art_id']}'">
